@@ -1,12 +1,12 @@
 //generate random password
 function generate() {
-  //set password length/complexity
+  // variables
+  // set password length/complexity
   let complexity = document.getElementById("slider").value;
-
-  //possible password values
+  // possible password values
   let values =
     "ABCDEFGHIJKLMNOPQRSTUVWZYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+";
-
+  // declaring password
   let password = "";
 
   //create for loop to choose password characters
@@ -16,14 +16,13 @@ function generate() {
       values.charAt(Math.floor(Math.random() * Math.floor(values.length - 1)));
   }
 
-  //add password to textbox/display area
+  // add password to textbox/display area
   document.getElementById("display").value = password;
-
   //add password to previously generated passwords section
   document.getElementById("lastNums").innerHTML += password + "<br />";
 }
 
-//set default length display of 25
+//set default length display of 30
 document.getElementById("length").innerHTML = "Length: 30";
 
 //function to set length based on slider position
