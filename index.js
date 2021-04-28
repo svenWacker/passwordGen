@@ -39,8 +39,6 @@ document.getElementById("slider").oninput = function () {
 //function to copy password to clipboard
 function copyPassword() {
   document.getElementById("display").select();
-
   document.execCommand("Copy");
-
   alert("Password copied to clipboard!");
 }
