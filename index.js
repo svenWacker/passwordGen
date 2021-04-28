@@ -35,9 +35,21 @@ document.getElementById("slider").oninput = function () {
   }
 };
 
+var modal = null;
+function pop() {
+  if (modal === null) {
+    document.getElementById("box").style.display = "block";
+    modal = true;
+  } else {
+    document.getElementById("box").style.display = "none";
+    modal = null;
+  }
+}
+
 //function to copy password to clipboard
 function copyPassword() {
   document.getElementById("display").select();
   document.execCommand("Copy");
-  alert("Password copied to clipboard!");
+  // alert("Password copied to clipboard!");
+  pop();
 }

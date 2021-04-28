@@ -22,3 +22,25 @@
 .previous_passwords {
   margin-bottom: 20px;
 }
+
+#box {
+  width: 400px;
+  overflow: hidden;
+  background: rgb(155, 199, 226);
+  box-shadow: 0 0 10px black;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  padding: 10px;
+  text-align: center;
+  display: none;
+}
+.close {
+  font-size: 1rem;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: white;
+}
